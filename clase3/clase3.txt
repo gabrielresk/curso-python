@@ -1,0 +1,156 @@
+Variables Int, Str y float(decimal) son inmutables, al igual que las tuplas
+
+	las tuplas se rellenan con ()
+	y las listas con []
+	
+las listas si son inmutables
+
+tupla ('a', 'b', 'c')
+tupla[0] = 'z'
+print(tupla)
+	error
+	
+lista ['a', 'b', 'c']
+lista[0]] = 'z'
+print(lista)
+	echo
+	
+agregar elemmentos a la lista
+lista.append('r', 'p')
+print(lista)
+
+remover elementos de la lista
+lista.remove('r')
+print(lista)
+
+concatenar 2 listas
+lista ['a', 'b', 'c']
+atsil ['e', 'f', 'g']
+lista.append(atsil)
+print(lista)
+
+crear lista vacia
+colores []
+colores.append('amarillo', 'azul', 'rojo')
+
+diccionario = {
+    "clave": "valor",
+    "clave2": 15
+    }
+print(diccionario)
+{'clave': 'valor', 'clave2': 15}
+print(diccionario['clave2'])
+15
+
+resultado = diccionario['clave2']
+print(resultado)
+15
+
+diccionario['clave2'] = 99
+print(resultado)
+15
+print(diccionario['clave2'])
+99
+
+diccionario = {'clave1': 1, 'clave2': 2, 'clave3': 3, 'clave4': 4}
+print(diccionario)
+{'clave1': 1, 'clave2': 2, 'clave3': 3, 'clave4': 4}
+
+diccionario.pop('clave1')
+1
+print(diccionario)
+{'clave2': 2, 'clave3': 3, 'clave4': 4}
+
+conjunto es igual que la lista pero la lista si repide valores, en cambio al imprimir conjunto solo muestra los no repetidos.
+
+conjunto {1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6}
+print(conjunto)
+
+conjuntob {7, 8, 9}
+
+suma conjuntos
+conjunto | conjuntob
+
+diferencia de conjuntos
+conjunto - conjuntob
+
+ tipos de datos
+numeros = 5
+cadenas = 'hola'
+boleano = true
+flotante = 5.5
+listas = ['a', 'b', 'c',]
+tupla = ('a', 'b', 'c')
+diccionario = { 'clave1': 1, 'clave2': 2, 'clave3': 'hola'}
+
+metodos y operadores
+
+convertir cadenas en listas
+
+mitexto = 'estos son numeros 1 2 3 4 5'
+print(mitexto)
+estos son numeros 1 2 3 4 5
+mitexto.split()
+['estos', 'son', 'numeros', '1', '2', '3', '4', '5']
+
+combina metodos
+
+reemplaza la x y las (,) por nada, pon todo en minuscula y convierte en lista
+texto2 = 'Hola, esto es un ejemplOx'
+texto2.replace('x','').replace(',','').lower().split()
+['hola', 'esto', 'es', 'un', 'ejemplo']
+
+
+OPERADORES ARITMERICOS (CALCULOS MATEMATICOS)
+
+a = 5
+b = 6
+a*b
+b-a
+
+potencia
+a ** b
+es como decir 5*5*5*5*5*5 se va multiplicar 5 por si mismo 6 veces
+
+5*5*5*5*5*5
+15625
+a = 5
+b = 6
+a ** b
+15625
+
+a = 5
+b = 6
+a **= b
+print(a)
+15625
+
+a += 5
+suma a + 5 y lo guardas en a
+
+a = 5
+a += 5
+print(a)
+10
+
+
+
+
+
+
+
+Escribe un programa en la consola de python que pida al usuario su peso (en kg) y estatura (en metros)
+
+calcule el índice de masa corporal y lo almacene en una variable
+
+e imprima por pantalla la frase: Tu índice de masa corporal es (el índice de masa corporal calculado redondeado con dos decimales)
+
+Tienes que subir capturas de pantalla en una carpeta comprimida zip.
+
+pesousuario = input("Cuatos KG Pesas?")
+Cuatos KG Pesas?110
+estaturausuario = input("Cuantos metros mides?")
+Cuantos metros mides?1.71
+masa = round(float(pesousuario)/float(estaturausuario)**2,2)
+print("Su masa coorporal es de " + str(masa))
+Su masa coorporal es de 37.62
